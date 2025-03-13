@@ -1,4 +1,4 @@
-# Isthi's Tarot - Servicii Esoterice și Spiritualitate ✨
+# Isthistarot - Servicii Esoterice și Spiritualitate ✨
 
 Bine ai venit pe pagina mea de GitHub! Aici îți voi prezenta toate serviciile esoterice și spirituale pe care le ofer, inclusiv citiri în tarot, analize astrologice și multe altele. Dacă ești în căutarea unei ghidări spirituale sau a unui moment de reflecție, sunt aici pentru a te ajuta.
 
