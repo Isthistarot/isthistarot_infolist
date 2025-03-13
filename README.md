@@ -1,4 +1,4 @@
-## Hi there 👋
+ ## Hi there 👋
 
 <!--
 **Isthistarot/Isthistarot** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
@@ -202,11 +202,29 @@ Here are some ideas to get you started:
                  document.getElementById("services-title").innerHTML = "Services";
                  document.getElementById("services-description").innerHTML = "Esoteric consultations and personalized readings for every question.";
                  document.getElementById("tarot-title").innerHTML = "Tarot Reading (30 minutes)";
-                 document.getElementById("tarot-price").innerHTML = "150 RON";
-                 document.getElementById("birth-chart-title").innerHTML = "Birth Chart / Astrology Analysis (3 questions + general reading)";
-                 document.getElementById("birth-chart-price").innerHTML = "200 RON";
+                 document.getElementById("tarot-price").innerHTML = "33 EUR";
+                 document.getElementById("birth-chart-title").innerHTML = "Birth Chart";
+                 document.getElementById("birth-chart-price").innerHTML = "44 EUR";
                  document.getElementById("general-reading-title").innerHTML = "General Reading";
-                 document.getElementById("general-reading-price").innerHTML = "60 RON";
+                 document.getElementById("general-reading-price").innerHTML = "13 EUR";
+                 document.getElementById("birth-chart-title").innerHTML = "Matrix Chart ";
+                 document.getElementById("birth-chart-price").innerHTML = "60 EUR";
+                 document.getElementById("general-reading-title").innerHTML = "Astral Analysis";
+                 document.getElementById("general-reading-price").innerHTML = "22 EUR";
+                 document.getElementById("tarot-title").innerHTML = "3 Questions";
+                 document.getElementById("tarot-price").innerHTML = "11 EUR";
+                 document.getElementById("birth-chart-title").innerHTML = "Numerology ";
+                 document.getElementById("birth-chart-price").innerHTML = "55 EUR";
+                 document.getElementById("general-reading-title").innerHTML = "Tarot Meanings book pdf";
+                 document.getElementById("general-reading-price").innerHTML = "33 EUR";
+                 document.getElementById("tarot-title").innerHTML = "How to heal your chakra";
+                 document.getElementById("tarot-price").innerHTML = "25 EUR";
+                 document.getElementById("birth-chart-title").innerHTML = "Matrix Chart Couple";
+                 document.getElementById("birth-chart-price").innerHTML = "66 EUR";
+                 document.getElementById("general-reading-title").innerHTML = "Messages from Univers";
+                 document.getElementById("general-reading-price").innerHTML = "14 EUR";
+                 document.getElementById("general-reading-title").innerHTML = "Spiritual Journey with me";
+                 document.getElementById("general-reading-price").innerHTML = "111 EUR";
                  document.getElementById("ask-price").innerHTML = "Ask for the price of the reading type you want";
                  document.getElementById("contact-title").innerHTML = "Contact";
                  document.querySelector('button[type="submit"]').innerHTML = "Send Message";
@@ -222,8 +240,6 @@ Here are some ideas to get you started:
                  document.getElementById("birth-chart-price").innerHTML = "200 RON";
                  document.getElementById("general-reading-title").innerHTML = "Citire generală";
                  document.getElementById("general-reading-price").innerHTML = "60 RON";
-                 document.getElementById("tarot-title").innerHTML = "Citire Tarot (60 minute)";
-                 document.getElementById("tarot-price").innerHTML = "250 RON";
                  document.getElementById("birth-chart-title").innerHTML = "Matrix Chart ";
                  document.getElementById("birth-chart-price").innerHTML = "222 RON";
                  document.getElementById("general-reading-title").innerHTML = "Analiza astrala";
