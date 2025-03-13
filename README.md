@@ -3,93 +3,220 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consultanță Tarot - IsthisTarot</title>
+    <title>Tarot și Servicii Esoterice</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #2e2b3d;
-            color: #e0d3d3;
+            font-family: 'Arial', sans-serif;
+            background-color: #1a1a1a;
+            color: white;
             margin: 0;
             padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            line-height: 1.6;
-        }
-        h1, h2 {
-            color: #c3a6f9;
-        }
-        h1 {
-            margin-top: 20px;
-        }
-        .content {
-            max-width: 800px;
-            padding: 20px;
             text-align: center;
         }
-        .service-list {
+
+        h1, h2 {
+            font-family: 'Cursive', sans-serif;
+            color: #FFD700;
+            text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.2);
+        }
+
+        .section {
+            padding: 50px;
+            border-bottom: 1px solid #444;
+        }
+
+        .tarot-card {
+            width: 200px;
+            height: 300px;
+            background-color: #333;
+            margin: 20px;
+            border-radius: 15px;
+            display: inline-block;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+            transition: transform 0.3s;
+        }
+
+        .tarot-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .intro {
+            background-image: url('tarot-background.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 100px 20px;
+        }
+
+        .intro h1 {
+            font-size: 50px;
+            color: #FFD700;
+        }
+
+        .intro p {
+            font-size: 20px;
+            color: #fff;
+        }
+
+        .contact-form {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #444;
+            border-radius: 5px;
+            background-color: #222;
+            color: white;
+        }
+
+        .contact-form button {
+            background-color: #FFD700;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #e5c100;
+        }
+
+        .instagram-button {
+            background-color: #E1306C;
+            padding: 15px 30px;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            font-size: 18px;
+            text-decoration: none;
+            display: inline-block;
             margin-top: 20px;
         }
-        .service-item {
-            margin: 10px 0;
+
+        .instagram-button:hover {
+            background-color: #bc135c;
         }
-        .social-links {
-            margin: 20px 0;
-        }
-        .social-links a {
-            color: #e0d3d3;
-            text-decoration: none;
-            font-size: 18px;
-            margin: 0 10px;
-        }
-        .social-links a:hover {
-            color: #c3a6f9;
-        }
-        footer {
-            margin: 20px 0;
-            font-size: 14px;
-            color: #c3a6f9;
-        }
+
         .price {
-            color: #a087cf;
+            font-size: 20px;
+            margin: 20px 0;
+            color: #FFD700;
+        }
+
+        .price span {
+            color: #fff;
+        }
+
+        /* Language selector */
+        .language-selector {
+            position: fixed;
+            top: 10px;
+            right: 20px;
+            background-color: #333;
+            padding: 10px;
+            border-radius: 5px;
+            z-index: 1000;
+        }
+
+        .language-selector select {
+            background-color: #444;
+            color: white;
+            border: 1px solid #555;
+            padding: 5px;
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
-    <div class="content">
-        <h1>Consultanță Tarot cu IsthisTarot</h1>
-        <p>
-            Bine ai venit! Sunt pasionată de divinație și tarot de mai bine de 5 ani. Citirile mele sunt 
-            autentice și te pot ajuta să obții claritate în diverse aspecte ale vieții. Pentru mai multe detalii, 
-            citește mai jos despre ofertele și prețurile mele.
-        </p>
-        
-        <h2>Servicii și Prețuri</h2>
-        <div class="service-list">
-            <div class="service-item">Analiza birth chart - <span class="price">70 lei</span></div>
-            <div class="service-item">Analiza cuplu după zodii - <span class="price">35 lei</span></div>
-            <div class="service-item">Citire generală în tarot (iubire sau carieră) - <span class="price">40 lei</span></div>
-            <div class="service-item">1 întrebare cu 3 cărți - <span class="price">15 lei</span></div>
-            <div class="service-item">2 întrebări - <span class="price">25 lei</span></div>
-            <div class="service-item">3 întrebări - <span class="price">40 lei</span></div>
-            <div class="service-item">Întrebare despre ce simte persoana iubită - <span class="price">30 lei</span></div>
-            <div class="service-item">Mesaj de la îngeri - <span class="price">10 lei</span></div>
-            <div class="service-item">Ce trebuie să schimbați pentru a funcționa relația - <span class="price">25 lei</span></div>
-            <div class="service-item">Întrebare cu răspuns da/nu - <span class="price">10 lei</span></div>
-            <div class="service-item">Orice alt tip de întrebare - Contactează-mă pentru detalii!</div>
-            <div class="service-item"><strong>Ofertă: 3 întrebări + o citire generală - <span class="price">55 lei</span></strong></div>
-        </div>
 
-        <h2>Conectează-te cu mine</h2>
-        <div class="social-links">
-            <a href="https://www.tiktok.com/@isthistarot?_t=8qwm3HMaeyE&_r=1" target="_blank">TikTok</a>
-            <a href="https://www.instagram.com/isthistarot?igsh=OTN3dWJ4dHBqZzNr" target="_blank">Instagram</a>
+    <!-- Language selector -->
+    <div class="language-selector">
+        <label for="language">Language:</label>
+        <select id="language" onchange="changeLanguage()">
+            <option value="ro">Română</option>
+            <option value="en">English</option>
+        </select>
+    </div>
+
+    <div class="intro">
+        <h1 id="title">Descoperă Magia Tarotului</h1>
+        <p id="intro-text">Citiri în tarot, analize astrologice și multe altele</p>
+        <a href="https://www.instagram.com/isthistarot/" class="instagram-button" target="_blank" id="instagram-button">Contactează-mă pe Instagram</a>
+    </div>
+
+    <div class="section">
+        <h2 id="services-title">Servicii</h2>
+        <div class="tarot-card"></div>
+        <div class="tarot-card"></div>
+        <div class="tarot-card"></div>
+        
+        <p id="services-description">Consultații esoterice și citiri personalizate pentru fiecare întrebare a ta.</p>
+        
+        <div class="price">
+            <p><strong id="tarot-title">Citire Tarot (30 minute)</strong>: <span id="tarot-price">150 RON</span></p>
+            <p><strong id="birth-chart-title">Birth Chart / Analiză Astrologică (3 întrebări + citire generală)</strong>: <span id="birth-chart-price">200 RON</span></p>
+            <p><strong id="general-reading-title">Citire generală</strong>: <span id="general-reading-price">60 RON</span></p>
         </div>
         
-        <footer>
-            &copy; 2023 IsthisTarot. Toate drepturile rezervate.
-        </footer>
+        <a href="https://www.instagram.com/isthistarot/" class="instagram-button" target="_blank" id="ask-price">Întreabă prețul pentru tipul de citire dorit</a>
     </div>
+
+    <div class="section">
+        <h2 id="contact-title">Contact</h2>
+        <div class="contact-form">
+            <form>
+                <input type="text" placeholder="Nume" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Mesaj" rows="5" required></textarea>
+                <button type="submit">Trimite mesajul</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function changeLanguage() {
+            const lang = document.getElementById("language").value;
+
+            if (lang === "en") {
+                document.getElementById("title").innerHTML = "Discover the Magic of Tarot";
+                document.getElementById("intro-text").innerHTML = "Tarot readings, astrology charts, and more";
+                document.getElementById("instagram-button").innerHTML = "Contact me on Instagram";
+                document.getElementById("services-title").innerHTML = "Services";
+                document.getElementById("services-description").innerHTML = "Esoteric consultations and personalized readings for every question.";
+                document.getElementById("tarot-title").innerHTML = "Tarot Reading (30 minutes)";
+                document.getElementById("tarot-price").innerHTML = "150 RON";
+                document.getElementById("birth-chart-title").innerHTML = "Birth Chart / Astrology Analysis (3 questions + general reading)";
+                document.getElementById("birth-chart-price").innerHTML = "200 RON";
+                document.getElementById("general-reading-title").innerHTML = "General Reading";
+                document.getElementById("general-reading-price").innerHTML = "60 RON";
+                document.getElementById("ask-price").innerHTML = "Ask for the price of the reading type you want";
+                document.getElementById("contact-title").innerHTML = "Contact";
+                document.querySelector('button[type="submit"]').innerHTML = "Send Message";
+            } else {
+                document.getElementById("title").innerHTML = "Descoperă Magia Tarotului";
+                document.getElementById("intro-text").innerHTML = "Citiri în tarot, analize astrologice și multe altele";
+                document.getElementById("instagram-button").innerHTML = "Contactează-mă pe Instagram";
+                document.getElementById("services-title").innerHTML = "Servicii";
+                document.getElementById("services-description").innerHTML = "Consultații esoterice și citiri personalizate pentru fiecare întrebare a ta.";
+                document.getElementById("tarot-title").innerHTML = "Citire Tarot (30 minute)";
+                document.getElementById("tarot-price").innerHTML = "150 RON";
+                document.getElementById("birth-chart-title").innerHTML = "Birth Chart / Analiză Astrologică (3 întrebări + citire generală)";
+                document.getElementById("birth-chart-price").innerHTML = "200 RON";
+                document.getElementById("general-reading-title").innerHTML = "Citire generală";
+                document.getElementById("general-reading-price").innerHTML = "60 RON";
+                document.getElementById("ask-price").innerHTML = "Întreabă prețul pentru tipul de citire dorit";
+                document.getElementById("contact-title").innerHTML = "Contact";
+                document.querySelector('button[type="submit"]').innerHTML = "Trimite mesajul";
+            }
+        }
+    </script>
+
 </body>
 </html>
