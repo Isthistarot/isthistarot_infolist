@@ -36,38 +36,6 @@ Here are some ideas to get you started:
              border-bottom: 1px solid #444;
          }
  
-         .tarot-card {
-             width: 200px;
-             height: 300px;
-             background-color: #333;
-             margin: 20px;
-             border-radius: 15px;
-             display: inline-block;
-             box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
-             transition: transform 0.3s;
-         }
- 
-         .tarot-card:hover {
-             transform: translateY(-10px);
-         }
- 
-         .intro {
-             background-image: url('tarot-background.jpg');
-             background-size: cover;
-             background-position: center;
-             padding: 100px 20px;
-         }
- 
-         .intro h1 {
-             font-size: 50px;
-             color: #FFD700;
-         }
- 
-         .intro p {
-             font-size: 20px;
-             color: #fff;
-         }
- 
          .contact-form {
              background-color: rgba(0, 0, 0, 0.7);
              padding: 20px;
